@@ -1,0 +1,31 @@
+header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: greenyellow;
+}
+
+header .nav-head {
+    border: 1px solid black;
+	position: relative;
+	float: left;
+	width: 250px;
+    cursor: pointer;
+	
+}
+
+.dropdown-nav {
+    display: none;
+	position: absolute;
+	text-align: left;
+	background-color: wheat;
+	width: 200px;
+	height: 240px;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+.dropdown-nav li {
+	margin: 15px 20px;
+	font-size: 18px;
+}

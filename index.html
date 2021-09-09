@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="nav.css">
 	<title>Assignment 3</title>
 </head>
 <body>
 	<header class="border">
 		<h1>Header</h1>
+		<div class="dropdown">
+			<div onclick="dropdown()" id="nav-head" class="nav-head">Click for dropdown menu</div>
+			<div id="dropdown-nav" class="dropdown-nav">
+				<li>Home</li>
+				<li>About</li>
+				<li>Team</li>
+				<li>Services</li>
+				<li>Contact</li>
+				<li>Partners</li>
+			</div>
+		</div>
+		<div class="dropdown">
+			<div onmouseover="hoverDropdown()" id="nav-head-hover" class="nav-head">Mouse Hover for dropdown menu</div>
+			<div id="hoverDropdown-nav" class="dropdown-nav">
+				<li>Home</li>
+				<li>About</li>
+				<li>Team</li>
+				<li>Services</li>
+				<li>Contact</li>
+				<li>Partners</li>
+			</div>
+		</div>
 	</header>
 	<nav class="border">
 		<div class="navlinks">
@@ -21,7 +45,7 @@
 	</nav>
 	<section class="border">
 		<article class="border">
-			<hgroup class="border">
+			<!-- <hgroup class="border">
 				<div class="heading">
 					<h3 class="pill"><a href="#section1">Heading 1</a></h3>
 					<h3 class="pill"><a href="#section2">Heading 2</a></h3>
@@ -42,11 +66,34 @@
 						<h3>Heading 4 is visible</h3>
 					</div>
 				</div>
-			</hgroup>
+			</hgroup> -->
+			<div class="container">
+				<h1>Javascript Calculator !!</h1>
+				<div class="calculatorField">
+					<div class="inputData">
+						<input type="number" id="num1" placeholder="Enter Number Here" required>
+						<input type="number" id="num2" placeholder="Enter Number Here" required>
+					</div>
+					<div>
+						<button onclick="add()" class="btn btn-primary">Add (+)</button>
+						<button onclick="subtract()" class="btn btn-primary">Subtract (-)</button>
+						<button onclick="multiply()" class="btn btn-primary">Multiply (x)</button>
+						<button onclick="divide()" class="btn btn-primary">Divide (/)</button>
+						<button onclick="percentage()" class="btn btn-primary">Percentage (%)</button>
+						<button onclick="reset()" class="btn btn-warning">Reset</button>
+					</div>
+					<div>
+						<h3 id="answer"></h3>
+					</div>
+				</div>
+			</div>
 			<aside class="border inside">Aside</aside>
 		</article>
 		<aside class="border outside">Aside</aside>
 	</section>
 	<footer class="border">Footer</footer>
+
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="calculator.js"></script>
 </body>
 </html>
