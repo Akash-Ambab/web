@@ -1,4 +1,6 @@
 
+//Dropdown code start
+
 function hoverDropdown() {
     let x = document.getElementById("nav-head-hover");
     x.addEventListener("mouseenter", function(){
@@ -20,3 +22,40 @@ function dropdown() {
         x.style.display = "none";
     }
 }
+
+//Dropdown code ends here
+
+//tab section code starts here
+
+$(document).ready(function(){
+
+    $(".tabs-list li a").click(function(e){
+       e.preventDefault();
+    });
+  
+    $(".tabs-list li").click(function(){
+       var tabid = $(this).find("a").attr("href");
+       $(".tabs-list li,.tabs .tab").removeClass("active");
+       $(".tab").hide();
+       $(tabid).show();
+       $(this).addClass("active");
+  
+    });
+
+    $(".accordion h3").click(function() {
+        var check = $(this).next().attr("class");
+        if (check == "active") {
+           $(this).next().removeClass("active");
+           $(this).next().slideUp();
+           $(this).find(".sign").html("&#43");
+        }
+        else {
+           $(this).next().slideDown();
+           $(this).next().addClass("active");
+           $(this).find(".sign").html("&#8722");
+        }  
+    });
+  
+});
+
+//tab section code ends here

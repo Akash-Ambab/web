@@ -70,3 +70,32 @@ function reset() {
     document.getElementById("answer").innerHTML = "";
 
 }
+
+
+// JQuery Calculator
+
+$(document).ready(function() {
+    $(".calKey").click(function() {
+        let data = $(this).val();
+        $("#calScreen").val($("#calScreen").val() + data); //Append data
+    });
+
+    $(".del").click(function() {
+        let data = $("#calScreen").val();
+        data = data.slice(0, -1);
+        $("#calScreen").val(data);
+    })
+
+    $(".solve").click(function() {
+        let data = $("#calScreen").val();
+        let answer = eval(data);
+        $("#jqanswer").html("Answer: " + answer);
+    });
+
+    $(".reset").click(function() {
+        $("#calScreen").val("");
+        $("#jqanswer").html("");
+    })
+
+
+})

@@ -1,0 +1,103 @@
+.tabContainer {
+    width: 100%;
+    display: flex;
+}
+
+.tabs {
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center !important;
+}
+
+.tabs .tabs-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.tabs .tabs-list li {
+    width: 50%;
+    /* float: right; */
+    margin: 0 !important;
+    justify-content: center;
+    /* margin-right:2px; */
+    padding: 10px 5px;
+    text-align: center;
+    background-color:cornflowerblue;
+    border-radius:3px;
+}
+
+.tabs .tabs-list li:hover {
+    cursor: pointer;
+}
+
+.tabs .tabs-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+.tabs .tab{
+    display:none;
+    width:100%;
+    height:auto;
+    border-radius:3px;
+    padding: 10px 0;
+    background-color:lavender;
+    color:darkslategray;
+    clear: both;
+}
+
+.tabs .tab h3{
+    border-bottom:3px solid cornflowerblue;
+    letter-spacing:1px;
+    font-weight:normal;
+    padding: 15px;
+}
+.tabs .tab p{
+    line-height:20px;
+    padding: 15px;
+    letter-spacing: 1px;
+}
+
+.active{
+    display:block !important;
+}
+
+.tabs .tabs-list li.active{
+    background-color:lavender !important;
+    color:black !important;
+}
+
+.active a{
+    color:black !important;
+}
+
+/* Accordion styling */
+
+.accordion {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.accordion h3{
+    background-color: yellowgreen;
+    border-bottom:3px solid cornflowerblue;
+    letter-spacing:1px;
+    font-weight:normal;
+    padding: 15px;
+    cursor: pointer;
+}
+.accordion p{
+    display: none;
+    line-height:20px;
+    padding: 15px;
+    letter-spacing: 1px;
+}
+
+.accordion h3 span {
+    font-size: 24px;
+    font-weight: bold;
+    float: right;
+}

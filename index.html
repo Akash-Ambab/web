@@ -4,6 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="nav.css">
+	<link rel="stylesheet" type="text/css" href="tabs.css">
+	<link rel="stylesheet" type="text/css" href="jqueryCal.css">
 	<title>Assignment 3</title>
 </head>
 <body>
@@ -67,7 +69,7 @@
 					</div>
 				</div>
 			</hgroup> -->
-			<div class="container">
+			<div class="calContainer">
 				<h1>Javascript Calculator !!</h1>
 				<div class="calculatorField">
 					<div class="inputData">
@@ -89,10 +91,148 @@
 			</div>
 			<aside class="border inside">Aside</aside>
 		</article>
-		<aside class="border outside">Aside</aside>
+		<aside class="border outside">
+			<div class="tabContainer">
+				<div class="tabs">
+				  <ul class="tabs-list">
+					  <li class="active"><a href="#tab1">Tab1</a></li>
+					  <li ><a href="#tab2">Tab2</a></li>
+				  </ul>
+				
+				  <div id="tab1" class="tab active">
+					<div class="accordion">
+					  <h3>Accordion 1 <span class="sign">&#8722</span></h3>
+					  <p class="active">
+						Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary
+					  </p>
+					</div>
+			
+					<div class="accordion">
+					  <h3>Accordion 2 <span class="sign">&#43</span></h3>
+					  <p>
+						Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary
+					  </p>
+					</div>
+			
+					<div class="accordion">
+					  <h3>Accordion 3 <span class="sign">&#43</span></h3>
+					  <p>
+						Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary
+					  </p>
+					</div>
+				  </div>
+			
+			
+				  <div id="tab2" class="tab">
+					<div class="accordion">
+					  <h3>Accordion 4 <span class="sign">&#43</span></h3>
+					  <p>
+						Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary
+					  </p>
+					</div>
+			
+					<div class="accordion">
+					  <h3 id="accordion2">Accordion 5 <span class="sign">&#43</span></h3>
+					  <p>
+						Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary
+					  </p>
+					</div>
+				  </div>
+				</div>
+			  </div>
+		</aside>
 	</section>
+
+	<div class="calJContainer">
+		<h1>JQuery Calculator</h1>
+		<table border="1px solid black">
+			<tr>
+				<td colspan="4">
+					<input id="calScreen" type="text" readonly>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button class="calKey" value="7">7</button>
+				</td>
+				<td>
+					<button class="calKey" value="8">8</button>
+				</td>
+				<td>
+					<button class="calKey" value="9">9</button>
+				</td>
+				<td>
+					<button class="calKey" value="*">*</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button class="calKey" value="4">4</button>
+				</td>
+				<td>
+					<button class="calKey" value="5">5</button>
+				</td>
+				<td>
+					<button class="calKey" value="6">6</button>
+				</td>
+				<td>
+					<button class="calKey" value="+">+</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<button class="calKey" value="1">1</button>
+				</td>
+				<td>
+					<button class="calKey" value="2">2</button>
+				</td>
+				<td>
+					<button class="calKey" value="3">3</button>
+				</td>
+				<td>
+					<button class="calKey" value="-">-</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<button class="calKey" value="%">%</button>
+				</td>
+				<td>
+					<button class="calKey" value="0">0</button>
+				</td>
+				<td>
+					<button class="calKey del">DEL</button>
+				</td>
+				<td>
+					<button class="calKey" value="/">/</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button class="calKey" value="(">(</button>
+				</td>
+				<td>
+					<button class="calKey" value=")">)</button>
+				</td>
+				<td>
+					<button class="calKey reset">AC</button>
+				</td>
+				<td>
+					<button class="calKey solve">=</button>
+				</td>
+			</tr>
+		</table>
+
+		<div>
+			<h1 id="jqanswer"></h1>
+		</div>
+	</div>
+
 	<footer class="border">Footer</footer>
 
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 	<script type="text/javascript" src="calculator.js"></script>
 </body>
