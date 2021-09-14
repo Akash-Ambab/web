@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formVal.css">
+    <title>Form Validation</title>
+</head>
+<body>
+    <div class="formContainer">
+        <h3>Form Validation (Using JQuery)</h3>
+
+        <form id="testForm" method="POST">
+            <table>
+                <tr>
+                    <td class="lable">Your Name <span>*</span></td>
+                    <td class="control">
+                        <input type="text" id="name" name="name">
+                        <p id="nameError"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lable">Email Address <span>*</span></td>
+                    <td class="control">
+                        <input type="email" id="email" name="email">
+                        <p id="emailError"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lable">Phone Number <span>*</span></td>
+                    <td class="control">
+                        <input type="tel" id="contact" name="contact">
+                        <p id="contactError"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lable">Address <span>*</span></td>
+                    <td class="control">
+                        <textarea id="address" name="address" rows="4" cols="50"></textarea>
+                        <p id="addressError"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lable">City <span>*</span></td>
+                    <td class="control">
+                        <select name="city" id="city">
+                            <option value="0">Select City</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Nashik">Nashik</option>
+                            <option value="Thane">Thane</option>
+                            <option value="Nagpur">Nagpur</option>
+                        </select>
+    
+                        <p id="cityError"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="control"><input type="submit" value="Submit"></td>
+                </tr>
+            </table>
+        </form>
+        <h1 id="success">Form Submitted Successfully</h1>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
