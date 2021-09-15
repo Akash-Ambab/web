@@ -2,10 +2,11 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="nav.css">
-	<link rel="stylesheet" type="text/css" href="tabs.css">
-	<link rel="stylesheet" type="text/css" href="jqueryCal.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/tabs.css">
+	<link rel="stylesheet" type="text/css" href="css/jQueyCalculator.css">
+	<link rel="stylesheet" type="text/css" href="css/jsCalculator.css">
 	<title>Assignment 3</title>
 </head>
 <body>
@@ -40,9 +41,8 @@
 			<li>About</li>
 			<li><a href="form.html">Form Validation</a></li>
 		</div>
-		<div class="searchBar">
-			<input type="search" placeholder="Search Here">
-			<button class="searchButton">Click Me</button>
+		<div class="right">
+			
 		</div>
 	</nav>
 	<section class="border">
@@ -51,8 +51,8 @@
 				<h1>Javascript Calculator !!</h1>
 				<div class="calculatorField">
 					<div class="inputData">
-						<input type="number" id="num1" placeholder="Enter Number Here" required>
-						<input type="number" id="num2" placeholder="Enter Number Here" required>
+						<input type="number" id="num1" placeholder="Enter First Number" required>
+						<input type="number" id="num2" placeholder="Enter Second Number" required>
 					</div>
 					<div>
 						<button onclick="add()" class="btn btn-primary">Add (+)</button>
@@ -210,8 +210,8 @@
 
 	<footer class="border">Footer</footer>
 
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script type="text/javascript" src="script.js"></script>
-	<script type="text/javascript" src="calculator.js"></script>
+	<script type="text/javascript" src="js/jQuery.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/calculator.js"></script>
 </body>
 </html>

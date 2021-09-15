@@ -1,0 +1,46 @@
+.calContainer {
+	width: 100%;
+	padding: 20px 10px;
+	text-align: center;
+	background-color: #5C3D2E;
+	color: #EDEDED;
+	grid-column: 1/4;
+}
+
+.calContainer h1 {
+	font-size: 26px;
+}
+
+.calculatorField {
+	width: 100%;
+}
+
+.inputData input {
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	margin: 10px 20px;
+	padding: 10px 5px;
+}
+
+.btn {
+	padding: 8px 10px;
+	margin: 2px 5px;
+	border-radius: 10px;
+	border: none;
+	border: 1px solid black;
+}
+
+.btn-primary {
+	background-color: #FEC260;
+	color: #420516;
+}
+
+.btn-warning {
+	background-color: rgba(255, 30, 0, 0.884);
+	color: white;
+}
+
+#answer {
+	font-size: 30px;
+}

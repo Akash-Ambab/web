@@ -1,6 +1,6 @@
 .calJContainer {
     width: 100%;
-    background-color:lavender;
+    /* background-color:lavender; */
 }
 
 .calJContainer h1 {
@@ -19,7 +19,7 @@ td {
 }
 
 td input {
-    width: 94%;
+    width: 100%;
     height: 50px;
     font-size: 30px;
     padding-left: 15px;

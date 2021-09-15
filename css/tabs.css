@@ -18,14 +18,11 @@
 
 .tabs .tabs-list li {
     width: 50%;
-    /* float: right; */
     margin: 0 !important;
     justify-content: center;
-    /* margin-right:2px; */
     padding: 10px 5px;
     text-align: center;
     background-color:cornflowerblue;
-    border-radius:3px;
 }
 
 .tabs .tabs-list li:hover {
@@ -41,7 +38,6 @@
     display:none;
     width:100%;
     height:auto;
-    border-radius:3px;
     padding: 10px 0;
     background-color:lavender;
     color:darkslategray;
@@ -82,10 +78,10 @@
 }
 
 .accordion h3{
-    background-color: yellowgreen;
-    border-bottom:3px solid cornflowerblue;
-    letter-spacing:1px;
-    font-weight:normal;
+    background-color: #3E2C41;
+    color: #EDEDED;
+    letter-spacing: 1px;
+    font-weight: normal;
     padding: 15px;
     cursor: pointer;
 }

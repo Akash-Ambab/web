@@ -1,3 +1,12 @@
+// JS FORM VALIDATION CODE STARTS HERE
+
+function checkValue(num1, num2) {
+    if(isNaN(num1) || isNaN(num2)) {
+        document.getElementById("answer").innerHTML = "You have not given values";
+        return false;
+    }
+    return true;
+}
 
 function add() {
     let num1 = document.getElementById("num1").value;
@@ -5,10 +14,11 @@ function add() {
 
     num1 = parseInt(num1);
     num2 = parseInt(num2);
-
-    let add = num1 + num2;
-
-    document.getElementById("answer").innerHTML = num1 + " + " + num2 + " = " + add;
+    
+    if(checkValue(num1, num2)) {
+        let add = num1 + num2;
+        document.getElementById("answer").innerHTML = num1 + " + " + num2 + " = " + add;
+    }
 }
 
 function subtract() {
@@ -18,10 +28,10 @@ function subtract() {
     num1 = parseInt(num1);
     num2 = parseInt(num2);
 
-    let sub = num1 - num2;
-
-    document.getElementById("answer").innerHTML = num1 + " - " + num2 + " = " + sub;
-
+    if(checkValue(num1, num2)) {
+        let sub = num1 - num2;
+        document.getElementById("answer").innerHTML = num1 + " - " + num2 + " = " + sub;
+    }
 }
 
 function multiply() {
@@ -31,9 +41,10 @@ function multiply() {
     num1 = parseInt(num1);
     num2 = parseInt(num2);
 
-    let mul = num1 * num2;
-
-    document.getElementById("answer").innerHTML = num1 + " x " + num2 + " = " + mul;
+    if(checkValue(num1, num2)) {
+        let mul = num1 * num2;
+        document.getElementById("answer").innerHTML = num1 + " x " + num2 + " = " + mul;
+    }
 
 }
 
@@ -44,10 +55,10 @@ function divide() {
     num1 = parseInt(num1);
     num2 = parseInt(num2);
 
-    let divide = num1 / num2;
-
-    document.getElementById("answer").innerHTML = num1 + " / " + num2 + " = " + divide;
-
+    if(checkValue(num1, num2)) {
+        let divide = num1 / num2;
+        document.getElementById("answer").innerHTML = num1 + " / " + num2 + " = " + divide;
+    }
 }
 
 function percentage() {
@@ -57,9 +68,10 @@ function percentage() {
     num1 = parseInt(num1);
     num2 = parseInt(num2);
 
-    let percentage = (num1 / 100) * num2;
-    document.getElementById("answer").innerHTML = num1 + " % of " + num2 + " = " + percentage;
-
+    if(checkValue(num1, num2)) {
+        let percentage = (num1 / 100) * num2;
+        document.getElementById("answer").innerHTML = num1 + " % of " + num2 + " = " + percentage;
+    }
 }
 
 function reset() {
@@ -70,6 +82,8 @@ function reset() {
     document.getElementById("answer").innerHTML = "";
 
 }
+
+//JAVASCRIPT CALCULATOR CODE ENDS HERE
 
 
 // JQuery Calculator
@@ -96,6 +110,6 @@ $(document).ready(function() {
         $("#calScreen").val("");
         $("#jqanswer").html("");
     })
-
-
 })
+
+//JQuery Calculator Code Ends Here
